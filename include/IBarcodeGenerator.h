@@ -4,5 +4,7 @@
 class IBarcodeGenerator {
 private:
 public:
-  virtual std::string generate(const std::string &text);
+  IBarcodeGenerator() = default;
+  virtual std::string generate(const std::string &text, int margin,
+                               int size) = 0;
 };
