@@ -1,13 +1,10 @@
 #include "../include/BarcodeFactory.h"
-#include "../include/DataMatrixGenerator.h"
-#include "../include/QrGenerator.h"
+
 #include "../include/crow_all.h"
-#include <fstream>
-#include <iostream>
+
 #include <memory>
 #include <string>
 
-#include <ZXing/Barcode.h>
 #include <ZXing/BarcodeFormat.h>
 
 #include <ZXing/BitMatrix.h>
