@@ -8,7 +8,6 @@
 #include <ZXing/Matrix.h>
 #include <ZXing/MultiFormatWriter.h>
 #include <memory>
-#include <stdexcept>
 #include <string>
 #include <utility>
 
