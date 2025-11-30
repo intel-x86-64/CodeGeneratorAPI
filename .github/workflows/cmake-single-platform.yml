@@ -1,4 +1,4 @@
-name: CMake Build
+name: CMake Build - Arch Linux
 
 on:
   push:
@@ -9,31 +9,37 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Install system dependencies
+    - name: Cache pacman packages
+      uses: actions/cache@v3
+      with:
+        path: /var/cache/pacman/pkg
+        key: ${{ runner.os }}-pacman-${{ hashFiles('**/CMakeLists.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pacman-
+      
+    - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y \
-          build-essential \
+        pacman -Sy --noconfirm
+        pacman -S --noconfirm --needed \
+          base-devel \
           cmake \
-          libssl-dev \
-          libzxing-dev
-          
-    - name: Configure CMake
+          openssl \
+          zxing-cpp
+        
+    - name: Build project
       run: |
         mkdir -p build
         cd build
         cmake -DCMAKE_BUILD_TYPE=Release ..
-        
-    - name: Build
-      run: |
-        cd build
         make -j$(nproc)
         
-    - name: Run tests
+    - name: Verify build
       run: |
-        cd build
+        [ -f build/server ] && echo "✅ Build successful" || (echo "❌ Build failed" && exit 1)
