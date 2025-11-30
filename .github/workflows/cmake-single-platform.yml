@@ -31,6 +31,7 @@ jobs:
           base-devel \
           cmake \
           openssl \
+          asio \
           zxing-cpp
         
     - name: Build project
