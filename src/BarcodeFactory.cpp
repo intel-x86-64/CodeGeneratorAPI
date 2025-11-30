@@ -1,6 +1,4 @@
 #include "../include/BarcodeFactory.h"
-#include <memory>
-#include <string>
 
 std::unique_ptr<IBarcodeGenerator>
 BarcodeFactory::create(const std::string type) {
@@ -8,6 +6,10 @@ BarcodeFactory::create(const std::string type) {
     return std::make_unique<QrGenerator>();
   } else if (type == "DataMatrix") {
     return std::make_unique<DataMatrixGenerator>();
+  } else if (type == "UPCA") {
+    return std::make_unique<UpcAGenerator>();
+  } else if (type == "ITF") {
+    return std::make_unique<ItfGenerator>();
   }
 
   return std::make_unique<QrGenerator>();
