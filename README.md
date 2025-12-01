@@ -23,7 +23,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - UPC-E
 - EAN-8
 - EAN-13
-- DataBar
+- [x] DataBar
 - DataBar Expanded
 - DataBar Limited
 - DX Film Edge
