@@ -21,6 +21,8 @@ BarcodeFactory::create(const std::string type) {
     return std::make_unique<Code39Generator>();
   } else if (type == "Code93") {
     return std::make_unique<Code93Generator>();
+  } else if (type == "Code128") {
+    return std::make_unique<Code128Generator>();
   }
 
   return std::make_unique<QrCodeGenerator>();
