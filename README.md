@@ -30,7 +30,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - [x] Code 39
 - [x] Code 93
 - [x] Code 128
-- Codabar
+- [x] Codabar
 - ITF
 - [x] QR Code
 - Micro QR Code
