@@ -28,7 +28,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - DataBar Limited
 - DX Film Edge
 - [x] Code 39
-- Code 93
+- [x] Code 93
 - Code 128
 - Codabar
 - ITF
