@@ -7,8 +7,9 @@
 #include "DataMatrixGenerator.h"
 #include "IBarcodeGenerator.h"
 #include "ItfGenerator.h"
-#include "QrGenerator.h"
+#include "QrCodeGenerator.h"
 #include "UpcAGenerator.h"
+#include "UpcEGenerator.h"
 #include <memory>
 #include <string>
 class BarcodeFactory {

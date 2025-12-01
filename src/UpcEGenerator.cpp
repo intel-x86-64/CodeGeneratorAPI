@@ -1,7 +1,7 @@
-#include "../include/QrGenerator.h"
+#include "../include/UpcEGenerator.h"
 
-std::string QrGenerator::generate(const std::string &text, int margin,
-                                  int size) {
+std::string UpcEGenerator::generate(const std::string &text, int margin,
+                                    int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);
   ZXing::BitMatrix matrix = writer.encode(text, size, size);
