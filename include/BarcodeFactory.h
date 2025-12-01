@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Code128Generator.h"
 #include "Code39Generator.h"
 #include "Code93Generator.h"
 #include "DataBarExpandedGenerator.h"
