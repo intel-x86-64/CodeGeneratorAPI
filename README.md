@@ -20,7 +20,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 <summary>Add support for all formats</summary>
 
 - UPC-A
-- UPC-E
+- [x] UPC-E
 - EAN-8
 - EAN-13
 - [x] DataBar
