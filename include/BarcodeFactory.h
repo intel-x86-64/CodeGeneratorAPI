@@ -1,5 +1,6 @@
 #pragma once
 
+#include "AztecGenerator.h"
 #include "CodabarGenerator.h"
 #include "Code128Generator.h"
 #include "Code39Generator.h"
