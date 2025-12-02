@@ -29,7 +29,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - [x] Codabar
 - [x] ITF
 - [x] QR Code
-- Aztec
+- [x] Aztec
 - [x] DataMatrix
 - PDF417  
 
