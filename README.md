@@ -31,6 +31,6 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - [x] QR Code
 - [x] Aztec
 - [x] DataMatrix
-- PDF417  
+- [x] PDF417  
 
 </details>
