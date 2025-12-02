@@ -25,6 +25,8 @@ BarcodeFactory::create(const std::string type) {
     return std::make_unique<AztecGenerator>();
   } else if (type == "Pdf417") {
     return std::make_unique<Pdf417Generator>();
+  } else if (type == "Ean13") {
+    std::make_unique<Ean13Generator>();
   }
 
   return std::make_unique<QrCodeGenerator>();
