@@ -6,6 +6,7 @@
 #include "Code39Generator.h"
 #include "Code93Generator.h"
 #include "DataMatrixGenerator.h"
+#include "Ean13Generator.h"
 #include "IBarcodeGenerator.h"
 #include "ItfGenerator.h"
 #include "Pdf417Generator.h"
