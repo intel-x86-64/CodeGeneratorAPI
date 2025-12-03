@@ -17,7 +17,7 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 
 # ToDo
 <details>
-<summary>Add support for all formats</summary>
+<summary>✓ Add support for all formats</summary>
 
 - [x] UPC-A
 - [x] UPC-E
@@ -34,3 +34,5 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - [x] PDF417  
 
 </details>
+
+- Rework interaction with the network, create classes for the network, etc.
