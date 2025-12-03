@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.30)
 project(CodeGeneratorAPI LANGUAGES CXX)
-file(GLOB SERVER_SOURCES "src/*.cpp")
+file(GLOB_RECURSE SERVER_SOURCES "src/*.cpp")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

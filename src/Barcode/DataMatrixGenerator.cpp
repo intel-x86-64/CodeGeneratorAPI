@@ -1,4 +1,4 @@
-#include "../include/DataMatrixGenerator.h"
+#include "../../include/Barcode/DataMatrixGenerator.h"
 
 std::string DataMatrixGenerator::generate(const std::string &text, int margin,
                                           int size) {

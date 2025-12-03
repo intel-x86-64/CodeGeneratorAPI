@@ -1,6 +1,6 @@
-#include "../include/Ean8Generator.h"
+#include "../../include/Barcode/UpcEGenerator.h"
 
-std::string Ean8Generator::generate(const std::string &text, int margin,
+std::string UpcEGenerator::generate(const std::string &text, int margin,
                                     int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);

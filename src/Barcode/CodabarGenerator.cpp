@@ -1,4 +1,4 @@
-#include "../include/CodabarGenerator.h"
+#include "../../include/Barcode/CodabarGenerator.h"
 
 std::string CodabarGenerator::generate(const std::string &text, int margin,
                                        int size) {

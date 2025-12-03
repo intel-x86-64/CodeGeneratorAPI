@@ -1,6 +1,6 @@
-#include "../include/AztecGenerator.h"
+#include "../../include/Barcode/Ean13Generator.h"
 
-std::string AztecGenerator::generate(const std::string &text, int margin,
+std::string Ean13Generator::generate(const std::string &text, int margin,
                                      int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);

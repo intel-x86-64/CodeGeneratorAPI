@@ -1,6 +1,6 @@
-#include "../include/Pdf417Generator.h"
+#include "../../include/Barcode/Code39Generator.h"
 
-std::string Pdf417Generator::generate(const std::string &text, int margin,
+std::string Code39Generator::generate(const std::string &text, int margin,
                                       int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);

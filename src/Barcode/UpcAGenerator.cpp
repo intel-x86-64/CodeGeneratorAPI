@@ -1,6 +1,6 @@
-#include "../include/UpcEGenerator.h"
+#include "../../include/Barcode/UpcAGenerator.h"
 
-std::string UpcEGenerator::generate(const std::string &text, int margin,
+std::string UpcAGenerator::generate(const std::string &text, int margin,
                                     int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);
