@@ -1,4 +1,4 @@
-#include "../include/BarcodeFactory.h"
+#include "../../include/Barcode/BarcodeFactory.h"
 #include <memory>
 
 std::unique_ptr<IBarcodeGenerator>

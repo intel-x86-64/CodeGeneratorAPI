@@ -1,16 +1,12 @@
-#include "../include/BarcodeFactory.h"
-
-#include "../include/crow_all.h"
-
-#include <memory>
-#include <string>
-
+#include "../include/Barcode/BarcodeFactory.h"
+#include "../include/Network/crow_all.h"
 #include <ZXing/BarcodeFormat.h>
-
 #include <ZXing/BitMatrix.h>
 #include <ZXing/BitMatrixIO.h>
 #include <ZXing/CharacterSet.h>
 #include <ZXing/MultiFormatWriter.h>
+#include <memory>
+#include <string>
 #include <utility>
 
 int main() {

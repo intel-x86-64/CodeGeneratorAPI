@@ -1,6 +1,6 @@
-#include "../include/QrCodeGenerator.h"
+#include "../../include/Barcode/Pdf417Generator.h"
 
-std::string QrCodeGenerator::generate(const std::string &text, int margin,
+std::string Pdf417Generator::generate(const std::string &text, int margin,
                                       int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);

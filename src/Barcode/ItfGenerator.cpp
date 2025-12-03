@@ -1,4 +1,4 @@
-#include "../include/ItfGenerator.h"
+#include "../../include/Barcode/ItfGenerator.h"
 
 std::string ItfGenerator::generate(const std::string &text, int margin,
                                    int size) {

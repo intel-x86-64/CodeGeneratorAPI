@@ -1,4 +1,4 @@
-#include "../include/Code128Generator.h"
+#include "../../include/Barcode/Code128Generator.h"
 
 std::string Code128Generator::generate(const std::string &text, int margin,
                                        int size) {

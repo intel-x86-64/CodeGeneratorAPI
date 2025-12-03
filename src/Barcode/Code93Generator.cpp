@@ -1,4 +1,4 @@
-#include "../include/Code93Generator.h"
+#include "../../include/Barcode/Code93Generator.h"
 
 std::string Code93Generator::generate(const std::string &text, int margin,
                                       int size) {

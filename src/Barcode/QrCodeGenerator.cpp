@@ -1,6 +1,6 @@
-#include "../include/Code39Generator.h"
+#include "../../include/Barcode/QrCodeGenerator.h"
 
-std::string Code39Generator::generate(const std::string &text, int margin,
+std::string QrCodeGenerator::generate(const std::string &text, int margin,
                                       int size) {
   writer.setMargin(margin);
   writer.setEncoding(ZXing::CharacterSet::UTF8);
