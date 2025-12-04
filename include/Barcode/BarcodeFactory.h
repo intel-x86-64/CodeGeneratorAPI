@@ -19,5 +19,5 @@
 
 class BarcodeFactory {
 public:
-    static std::unique_ptr<IBarcodeGenerator> create(const std::string type);
+  static std::unique_ptr<IBarcodeGenerator> create(const std::string type);
 };
