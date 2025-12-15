@@ -32,7 +32,3 @@ API for generating various matrix codes. Available for generation: UPC-A, UPC-E,
 - [x] Aztec
 - [x] DataMatrix
 - [x] PDF417  
-
-</details>
-
-- Rework interaction with the network, create classes for the network, etc.
